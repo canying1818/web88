@@ -21,6 +21,22 @@
     <input type="checkbox" name="mylove" value="zuqiu">足球
     <input type="checkbox" name="mylove" value="paiqiu">排球
 
+
+    <form action="/testWeb/LoginServlet" method="post">
+        <p>Username: <input name="username" type="text" placeholder="请输入用户名"></p>
+        <p>Password: <input name="password" type="password"></p>
+        <pre>          <input type="submit" id="btn1" value="login">  <input type="reset" value="reset"></pre>
+    </form>
+    <div id="div">
+        failure
+    </div>
+
+    <script type="text/javascript">
+        setTimeout(function() {
+            document.getElementById("div").style.display = "none";
+        }, 2000);
+    </script>
+
 </body>
 
 </html>

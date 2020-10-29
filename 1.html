@@ -33,6 +33,31 @@
         </div>
     </div>
 
+    <form action="/signin" method="post">
+        <p>Username: <input id="username"></p>
+        <p>Password: <input id="password" value="1" type="password"></p>
+        <p><a href="#">Cancel</a> <input type="button" id="btn1" value="登录"></p>
+    </form>
+    <script type="text/javascript">
+        var target = document.getElementById("btn1");
+        var qwe = document.getElementById("password").value;
+
+        console.log(typeof qwe);
+
+        function move() {
+            var data = "qwert";
+            var qwe = document.getElementById("password").value;
+            var qwe = document.getElementById("password").value;
+
+            if (qwe == data) {
+                alert("登录成功！");
+            }
+        }
+        target.onclick = function() {
+            move();
+        }
+    </script>
+
     <script>
         var target = document.getElementById("btn");
         target.onclick = function() {
