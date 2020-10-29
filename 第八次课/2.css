@@ -1,0 +1,11 @@
+#wrapper {
+    background-color: lightblue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: lightblue;
+}
